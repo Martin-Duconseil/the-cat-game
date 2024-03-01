@@ -17,27 +17,27 @@ class cat:
 
         # Graphics
 
-        self.head_up = pygame.image.load('the cat game/graphics/head_up.png').convert_alpha()
-        self.head_down = pygame.image.load('the cat game/graphics/head_down.png').convert_alpha()
-        self.head_right = pygame.image.load('the cat game/graphics/head_right.png').convert_alpha()
-        self.head_left = pygame.image.load('the cat game/graphics/head_left.png').convert_alpha()
+        self.head_up = pygame.image.load('the_cat_game/graphics/head_up.png').convert_alpha()
+        self.head_down = pygame.image.load('the_cat_game/graphics/head_down.png').convert_alpha()
+        self.head_right = pygame.image.load('the_cat_game/graphics/head_right.png').convert_alpha()
+        self.head_left = pygame.image.load('the_cat_game/graphics/head_left.png').convert_alpha()
 
-        self.tail_up = pygame.image.load('the cat game/graphics/tail_up.png').convert_alpha()
-        self.tail_down = pygame.image.load('the cat game/graphics/tail_down.png').convert_alpha()
-        self.tail_right = pygame.image.load('the cat game/graphics/tail_right.png').convert_alpha()
-        self.tail_left = pygame.image.load('the cat game/graphics/tail_left.png').convert_alpha()
+        self.tail_up = pygame.image.load('the_cat_game/graphics/tail_up.png').convert_alpha()
+        self.tail_down = pygame.image.load('the_cat_game/graphics/tail_down.png').convert_alpha()
+        self.tail_right = pygame.image.load('the_cat_game/graphics/tail_right.png').convert_alpha()
+        self.tail_left = pygame.image.load('the_cat_game/graphics/tail_left.png').convert_alpha()
 
-        self.body_vertical = pygame.image.load('the cat game/graphics/body_vertical.png').convert_alpha()
-        self.body_horizontal = pygame.image.load('the cat game/graphics/body_horizontal.png').convert_alpha()
+        self.body_vertical = pygame.image.load('the_cat_game/graphics/body_vertical.png').convert_alpha()
+        self.body_horizontal = pygame.image.load('the_cat_game/graphics/body_horizontal.png').convert_alpha()
 
-        self.body_tr = pygame.image.load('the cat game/graphics/body_tr.png').convert_alpha()
-        self.body_tl = pygame.image.load('the cat game/graphics/body_tl.png').convert_alpha()
-        self.body_br = pygame.image.load('the cat game/graphics/body_br.png').convert_alpha()
-        self.body_bl = pygame.image.load('the cat game/graphics/body_bl.png').convert_alpha()
+        self.body_tr = pygame.image.load('the_cat_game/graphics/body_tr.png').convert_alpha()
+        self.body_tl = pygame.image.load('the_cat_game/graphics/body_tl.png').convert_alpha()
+        self.body_br = pygame.image.load('the_cat_game/graphics/body_br.png').convert_alpha()
+        self.body_bl = pygame.image.load('the_cat_game/graphics/body_bl.png').convert_alpha()
 
         # Sound
 
-        self.crunch_sound = pygame.mixer.Sound('the cat game/sound/crunch.wav')
+        self.crunch_sound = pygame.mixer.Sound('the_cat_game/sound/crunch.wav')
     
     # Draw the cat on the screen
 
@@ -228,19 +228,19 @@ cell_size = 40
 cell_number = 20
 screen = pygame.display.set_mode((cell_number * cell_size, cell_number * cell_size))
 clock = pygame.time.Clock() # Clock to limit the frame rate
-fish = pygame.image.load('the cat game/graphics/fish.png').convert_alpha()
-steak = pygame.image.load('the cat game/graphics/steak.png').convert_alpha()
-game_font = pygame.font.Font('the cat game/font/days-one.regular.ttf',25)
+fish = pygame.image.load('the_cat_game/graphics/fish.png').convert_alpha()
+steak = pygame.image.load('the_cat_game/graphics/steak.png').convert_alpha()
+game_font = pygame.font.Font('the_cat_game/font/days-one.regular.ttf',25)
 
 SCREEN = pygame.display.set_mode((cell_number * cell_size, cell_number * cell_size))
 
-BG = pygame.image.load('the cat game/graphics/background_main_menu.png').convert_alpha()
+BG = pygame.image.load('the_cat_game/graphics/background_main_menu.png').convert_alpha()
 
 SCREEN_UPDATE = pygame.USEREVENT
 pygame.time.set_timer(SCREEN_UPDATE,150)
 
 def get_font(size): 
-    return pygame.font.Font("the cat game/font/days-one.regular.ttf", size)
+    return pygame.font.Font("the_cat_game/font/days-one.regular.ttf", size)
 
 main_game = MAIN()
 
@@ -299,9 +299,9 @@ def main_menu():
 
         MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-        PLAY_BUTTON = Button(image=pygame.image.load("the cat game/graphics/Play Rect.png"), pos=(550, 350), 
+        PLAY_BUTTON = Button(image=pygame.image.load("the_cat_game/graphics/play_rect.png"), pos=(550, 350), 
                             text_input="Play", font=get_font(60), base_color="#252525", hovering_color="#252525")
-        QUIT_BUTTON = Button(image=pygame.image.load("the cat game/graphics/Quit Rect.png"), pos=(550, 550), 
+        QUIT_BUTTON = Button(image=pygame.image.load("the_cat_game/graphics/option_rect.png"), pos=(550, 550), 
                             text_input="Quit", font=get_font(60), base_color="#252525", hovering_color="#252525")
         
         for button in [PLAY_BUTTON, QUIT_BUTTON]:
