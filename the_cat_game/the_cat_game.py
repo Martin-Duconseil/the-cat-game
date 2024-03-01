@@ -242,12 +242,18 @@ pygame.time.set_timer(SCREEN_UPDATE,150)
 def get_font(size): 
     return pygame.font.Font("the_cat_game/font/days-one.regular.ttf", size)
 
+# Setting the icon and the title of the game
+
+pygame.display.set_icon(pygame.image.load('the_cat_game\logo.ico'))
+pygame.display.set_caption('The Cat Game')
+
 main_game = MAIN()
 
 # --------| Play Loop |---------- #
 
 def play():
     pygame.display.set_caption('Play')
+
 
     while True:
         
