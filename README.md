@@ -6,11 +6,20 @@
 
 It's a Snake game but here you play a Cat. :smile_cat: </br>
 Your goal is to catch fish and meat. Your cat will grow each time you catch food. :fish:</br>
-You will lose if you enter in collision with a wall or yourself! Have fun! :sparkles:	
+You will lose if you enter in collision with a wall or yourself! Have fun! :sparkles:
+
+## How to play?
+
+You can play by launching ```the_cat_game.py``` with Python! 🐍
 
 ## Technology used :wrench:	
 
 - Python
 - Pygame
 
-## Based on <a href="https://youtu.be/QFvqStqPCRU?feature=shared">ClearCode</a> tutorial with some improvement!
+## Based on <a href="https://youtu.be/QFvqStqPCRU?feature=shared">ClearCode</a> tutorial with some improvement! 😎
+
+- Visual elements changed: snake to cat, fruit to fish, colors
+- Menu added with play and quit button
+- Push ```esc``` to quit in game
+- New food added : meat!
